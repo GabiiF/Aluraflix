@@ -3,7 +3,7 @@ import './TextArea.css'
 const TextArea = (props)=>{
     return <div>
         <label>{props.titulo}</label>
-        <textarea>{props.placeholder}</textarea>
+        <textarea placeholder={props.placeholder}></textarea>
     </div>
 }
 export default TextArea
