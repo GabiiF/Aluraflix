@@ -1,0 +1,16 @@
+.lista-opciones label{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: block; /*para que se ponga arriba*/
+    margin-bottom: 8px;
+}
+.lista-opciones select{
+    width: 100%;
+    background-color: #03122F;
+    color: #FFFFFF;
+    padding: 1em;
+    border: 3px solid #2271D1;
+    border-radius: 10px;
+    font-size: 14px;
+}

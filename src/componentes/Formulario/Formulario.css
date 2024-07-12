@@ -2,5 +2,28 @@
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     color: #2271D1;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+    border-radius: 15px;
+    text-align: start;
+}
+.formulario form{
+    max-width: 80%;
+    padding: 8px 100px;
+    background-color: #03122F;
+    border: 5px solid #2271D1;
+    border-radius: 15px;
+    width: 50%;
+}
+.boton-cerrar{
+    display: flex;
+    justify-content: flex-end;
+}
+.form-botones{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    gap: 5px;
 }
