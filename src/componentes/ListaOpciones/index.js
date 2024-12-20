@@ -1,6 +1,6 @@
 import './ListaOpciones.css';
 
-const ListaOpciones = ()=>{
+const ListaOpciones = (props)=>{
     const categorias =[
         "Frontend",
         "Backend",
@@ -10,10 +10,9 @@ const ListaOpciones = ()=>{
 
     return <div className="lista-opciones">
         <label>Categoría</label>
-        <select>
-            {categorias.map((categoria,index)=>{
-                return <option key={index}>{categoria}</option>
-            })}
+        <select value={props.valor}>
+            <option value="" disabled defaultValue="" hidden>Seleccionar equipo</option>
+            {categorias.map((categoria,index)=><option key={index}>{categoria}</option>)}
         </select>
     </div>
 }

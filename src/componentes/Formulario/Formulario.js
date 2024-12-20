@@ -14,16 +14,16 @@ const Formulario = ()=>{
         <form onSubmit={manejarEnvio}>
             <div className='boton-cerrar'>
                 <img src='/img/cross.png' alt='cerrar'></img>
-                </div>
+            </div>
             <h2>EDITAR CARD</h2>
-            <CampoTexto titulo="Título" placeholder="Agrega el Título"/>
-            <ListaOpciones />
-            <CampoTexto titulo="Imagen" placeholder="Agrega la imagen del video"/>
-            <CampoTexto titulo="Video" placeholder="Agrega la url del video"/>
-            <TextArea titulo="Descripción" placeholder="Agrega la descripción del video"/>
+            <CampoTexto titulo="Título" placeholder="Agrega el Título" required/>
+            <ListaOpciones required/>
+            <CampoTexto titulo="Imagen" placeholder="Agrega la imagen del video" required/>
+            <CampoTexto titulo="Video" placeholder="Agrega la url del video" required/>
+            <TextArea titulo="Descripción" placeholder="Agrega la descripción del video" required/>
             <div className='form-botones'>
             <Boton titulo="Guardar"/>
-            <Boton titulo="Limpiar"/>
+            <Boton titulo="Limpiar" type="reset"/>
             </div>
 
         </form>
